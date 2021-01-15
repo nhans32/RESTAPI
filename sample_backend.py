@@ -78,6 +78,7 @@ def get_users():
          if user['id'] == userToDelete['id']:
             users['users_list'].remove(user)
             resp = jsonify(success=True)
+            resp.status_code = 200
             return resp
       return userToDelete['id']
    elif request.method == 'POST':
