@@ -3,6 +3,8 @@ from flask_cors import CORS
 import string
 import random
 
+# integration into mongoDB
+
 app = Flask(__name__)
 CORS(app)
 
